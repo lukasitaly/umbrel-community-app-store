@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: lukas-wallos
+name: Wallos
+tagline: Wallos - Open-Source Personal Subscription Tracker 
+icon: ./icons/wallos.png
+category: Finance
+version: "2.26.0"
+port: 8282
+description: >-
+  Wallos is a powerful, open-source, and self-hostable web application designed to empower you in managing your finances with ease. Say goodbye to complicated spreadsheets and expensive financial software – Wallos simplifies the process of tracking expenses and helps you gain better control over your financial life.
+developer: ellite
+website: https://github.com/ellite/Wallos
+submitter: lukasitaly
+submission: https://github.com/ellite/Wallos
+repo: https://github.com/ellite/Wallos
+support: https://github.com/ellite/Wallos/issues
+gallery:
+  - https://github.com/ellite/Wallos/blob/main/screenshots/wallos-dashboard-light.png
+  - https://github.com/ellite/Wallos/blob/main/screenshots/wallos-dashboard-dark.png
+  - https://github.com/ellite/Wallos/blob/main/screenshots/wallos-stats.png
+  - https://github.com/ellite/Wallos/blob/main/screenshots/wallos-calendar.png
+  - https://github.com/ellite/Wallos/blob/main/screenshots/wallos-form.png
+releaseNotes: >-
+    add mobile menu navigation to experimental settings (1dbba18)
+    use browsers locale to set dates on the dashboard (1dbba18)
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

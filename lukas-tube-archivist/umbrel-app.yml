@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: lukas-tube-archivist
+name: TubeArchivist
+tagline: Your self hosted YouTube media server 
+icon: ./icons/tubearchivist.png
+category: Media
+version: "0.4.10"
+port: 8523
+description: >-
+  Wallos is a powerful, open-source, and self-hostable web application designed to empower you in managing your finances with ease. Say goodbye to complicated spreadsheets and expensive financial software – Wallos simplifies the process of tracking expenses and helps you gain better control over your financial life.
+developer: ellite
+website: https://www.tubearchivist.com/
+submitter: lukasitaly
+submission: https://github.com/tubearchivist/tubearchivist
+repo: https://github.com/tubearchivist/tubearchivist
+support: https://github.com/tubearchivist/tubearchivist/issues
+gallery:
+  - https://raw.githubusercontent.com/tubearchivist/tubearchivist/refs/heads/master/assets/tube-archivist-front.jpg
+releaseNotes: >-
+    This is a minor release to ship the latest fixes from the amazing yt-dlp team.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

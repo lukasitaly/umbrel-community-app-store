@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: lukas-writefreely
+name: WriteFreely
+tagline: Markdown-based publishing platform
+icon: ./icons/writefreely.png
+category: Files & Productivity
+version: "0.15.1"
+port: 8523
+description: >-
+  A clean, Markdown-based publishing platform made for writers. Write together and build a community. 
+developer: thebaer
+website: https://writefreely.org/
+submitter: lukasitaly
+submission: https://github.com/writefreely/writefreely
+repo: https://github.com/writefreely/writefreely
+support: https://github.com/writefreely/writefreely/issues
+gallery:
+  - https://i.snap.as/cQZxXoz.png
+  - https://i.snap.as/4rqAFzo.png
+releaseNotes: >-
+    -
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

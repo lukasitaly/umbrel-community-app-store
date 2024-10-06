@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: lukas-send
+name: Send
+tagline: Simple, private file sharing
+icon: ./icons/send.png
+category: Files & Productivity
+version: "1"
+port: 8282
+description: >-
+  Send lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn’t stay online forever.
+developer: timvisee
+website: https://send.vis.ee/
+submitter: lukasitaly
+submission: https://github.com/timvisee/send
+repo: https://github.com/timvisee/send
+support: https://github.com/timvisee/send/issues
+gallery:
+releaseNotes: >-
+    -
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

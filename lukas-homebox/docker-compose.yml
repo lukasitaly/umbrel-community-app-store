@@ -1,0 +1,11 @@
+services:
+    homebox:
+        container_name: homebox
+        restart: unless-stopped
+        ports:
+            - 3100:7745
+        environment:
+            - TZ=Europe/Rome
+        volumes:
+            - ${APP_DATA_DIR}/data:/data
+        image: ghcr.io/sysadminsmedia/homebox:latest

@@ -1,0 +1,40 @@
+manifestVersion: 1
+id: lukas-bookstack
+name: BookStack
+tagline: A platform to create documentation/wiki
+icon: ./icons/bookstack.png
+category: Files & Productivity
+version: "24.05.4"
+port: 8523
+description: >-
+  BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information.
+developer: ssddanbrown
+website: https://www.bookstackapp.com/
+submitter: lukasitaly
+submission: https://github.com/BookStackApp/BookStack
+repo: https://github.com/BookStackApp/BookStack
+support: https://github.com/BookStackApp/BookStack/issues
+gallery:
+  - https://www.bookstackapp.com/images/bookstack-hero-screenshot.webp
+  - https://www.bookstackapp.com/images/screenshots/thumb_page-view.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_page-edit.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_image-manager.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_books-view.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_book-overview.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_book-sorting.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_search.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_settings-view.png
+  - https://www.bookstackapp.com/images/screenshots/thumb_profile-page.png
+releaseNotes: >-
+    BookStack v24.05.4 has been released.
+
+    This is a security release to address issues found in LDAP group syncing, where in certain scenarios a user could be matched to extra roles incorrectly, and an issue with content visibility in "book-show" API responses which would not have permissions applied properly.
+
+    Upgrade is strongly advised for instances where LDAP authentication is used with group syncing, or where the REST API is used to fetch contents of books ("books-read" endpoint).
+
+    Thanks to Linus Nagel and their team at WorkSimple GmbH for reporting this API vulnerability.
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

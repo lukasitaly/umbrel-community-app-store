@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: lukas-monica
+name: Monica
+tagline: Monica helps you organize the social interactions with your loved ones.
+icon: ./icons/monica.png
+category: Social
+version: "4.1.2"
+port: 8523
+description: >-
+  Personal CRM. Remember everything about your friends, family and business relationships. 
+developer: djaiss
+website: https://www.monicahq.com/
+submitter: lukasitaly
+submission: https://github.com/monicahq/monica/tree/4.x
+repo: https://github.com/monicahq/monica/tree/4.x
+support: https://github.com/monicahq/monica/issues
+gallery:
+  - https://github.com/monicahq/monica/blob/4.x/docs/images/main-app.png?raw=true
+  - https://github.com/monicahq/monica/blob/4.x/docs/images/screenshot.png?raw=true
+releaseNotes: >-
+    fix bug with contact listing updating the updated_at date for all contacts (#7220) (32028ce)
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

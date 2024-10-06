@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: lukas-haven
+name: Haven
+tagline: Self-hostable private blogging
+icon: ./icons/havenblog.png
+category: Files & Productivity
+version: "1"
+port: 8523
+description: >-
+  Haven is a private blog application built with Ruby on Rails. Write what you want, create accounts for people you want to share with, keep up with each other using built-in RSS.
+developer: Haven
+website: https://havenweb.org/
+submitter: lukasitaly
+submission: https://github.com/havenweb/haven
+repo: https://github.com/havenweb/haven
+support: https://github.com/havenweb/haven/issues
+gallery:
+releaseNotes: >-
+    -
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

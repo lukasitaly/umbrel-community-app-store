@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: lukas-workout-tracker
+name: Workout Tracker
+tagline: A workout tracking web application
+icon: 
+category: Files & Productivity
+version: "1.18.1"
+port: 8070
+description: >-
+  A workout tracking web application for personal use (or family, friends), geared towards running and other GPX-based activities 
+developer: jovandeginste
+website: https://github.com/jovandeginste/workout-tracker
+submitter: lukasitaly
+submission: https://github.com/jovandeginste/workout-tracker
+repo: https://github.com/jovandeginste/workout-tracker
+support: https://github.com/jovandeginste/workout-tracker/issues
+gallery:
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/login.png?raw=true
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/single_workout-theme.jpg
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/dashboard.png
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/single_workout-dark.png
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/workout_overview.png
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/statistics.png
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/upload_workouts.png
+  - https://github.com/jovandeginste/workout-tracker/blob/master/docs/track.gif
+releaseNotes: >-
+  fix: add function to get filename of workout by @jovandeginste in #233
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

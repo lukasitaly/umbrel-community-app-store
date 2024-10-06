@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: lukas-homebox
+name: TubeArchivist
+tagline: Home inventory and organization system
+icon: ./icons/homebox.png
+category: Home & Automation
+version: "0.15.2"
+port: 8523
+description: >-
+  Homebox is the inventory and organization system built for the Home User! With a focus on simplicity and ease of use, Homebox is the perfect solution for your home inventory, organization, and management needs.
+developer: tankerkiller125
+website: https://homebox.software/en/
+submitter: lukasitaly
+submission: https://github.com/sysadminsmedia/homebox
+repo: https://github.com/sysadminsmedia/homebox
+support: https://github.com/sysadminsmedia/homebox/issues
+gallery:
+  - https://homebox.software/assets/home-screen.DIwm0zi6.png
+releaseNotes: >-
+    Fixes BS Javascript turning nulls into empty strings for unknown reasons for the soldPrice and purchasePrice before passing to the API causing save errors. We now explicitly set them to 0 values if they are empty to prevent this weird behavior.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
