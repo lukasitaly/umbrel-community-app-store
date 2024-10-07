@@ -38,11 +38,11 @@ services:
     volumes:
       - ${APP_DATA_DIR}/uploads:/uploads
     environment:
-      - VIRTUAL_HOST=send.example.org
+      - VIRTUAL_HOST=$DEVICE_DOMAIN_NAME
       - VIRTUAL_PORT=1234
       - DHPARAM_GENERATION=false
       - NODE_ENV=production
-      - BASE_URL=https://send.example.or
+      - BASE_URL=$DEVICE_DOMAIN_NAME
       - PORT=1234
       - REDIS_HOST=redis
       - FILE_DIR=${APP_DATA_DIR}/uploads

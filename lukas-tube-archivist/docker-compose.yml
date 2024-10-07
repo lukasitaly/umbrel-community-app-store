@@ -13,10 +13,10 @@ services:
       - REDIS_HOST=archivist-redis          # don't add protocol
       - HOST_UID=1000
       - HOST_GID=1000
-      - TA_HOST=https://tube.hoferlukas.org 192.168.1.100 # set your host name
-      - TA_USERNAME=lukas                   # your initial TA credentials
-      - TA_PASSWORD=naluso                  # your initial TA credentials
-      - ELASTIC_PASSWORD=naluso             # set password for Elasticsearch
+      - TA_HOST=$DEVICE_DOMAIN_NAME         # set your host name - can have multiple, just separate with space
+      - TA_USERNAME=umbrel                  # your initial TA credentials
+      - TA_PASSWORD=$APP_PASSWORD           # your initial TA credentials
+      - ELASTIC_PASSWORD=$APP_PASSWORD      # set password for Elasticsearch
       - TZ=Europe/Rome                      # set your time zone (eg. America/New_York)
     healthcheck:
       test: ["CMD", "curl", "-f", "http://192.168.1.100:8000/health"]
@@ -42,7 +42,7 @@ services:
     container_name: archivist-es
     restart: unless-stopped
     environment:
-      - "ELASTIC_PASSWORD=naluso"           # matching Elasticsearch password
+      - "ELASTIC_PASSWORD=$APP_PASSWORD"           # matching Elasticsearch password
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
       - "xpack.security.enabled=true"
       - "discovery.type=single-node"
