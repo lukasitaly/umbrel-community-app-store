@@ -1,8 +1,8 @@
 services:
   tubearchivist:
     container_name: tubearchivist
-    restart: unless-stopped
-    image: bbilly1/tubearchivist
+    restart: on-failure
+    image: bbilly1/tubearchivist:v0.4.10
     ports:
       - 8523:8000
     volumes:
@@ -14,7 +14,7 @@ services:
       - HOST_UID=1000
       - HOST_GID=1000
       - TA_HOST=$DEVICE_DOMAIN_NAME         # set your host name - can have multiple, just separate with space
-      - TA_USERNAME=umbrel                  # your initial TA credentials
+      - TA_USERNAME=tubearchivist           # your initial TA credentials
       - TA_PASSWORD=$APP_PASSWORD           # your initial TA credentials
       - ELASTIC_PASSWORD=$APP_PASSWORD      # set password for Elasticsearch
       - TZ=Europe/Rome                      # set your time zone (eg. America/New_York)
@@ -30,7 +30,7 @@ services:
   archivist-redis:
     image: redis/redis-stack-server
     container_name: archivist-redis
-    restart: unless-stopped
+    restart: on-failure
     expose:
       - "6379"
     volumes:
@@ -38,9 +38,9 @@ services:
     depends_on:
       - archivist-es
   archivist-es:
-    image: bbilly1/tubearchivist-es         # only for amd64, or use official es 8.13.2
+    image: bbilly1/tubearchivist-es:latest        # only for amd64, or use official es 8.13.2
     container_name: archivist-es
-    restart: unless-stopped
+    restart: on-failure
     environment:
       - "ELASTIC_PASSWORD=$APP_PASSWORD"           # matching Elasticsearch password
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"

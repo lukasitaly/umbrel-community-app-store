@@ -1,0 +1,49 @@
+manifestVersion: 1
+id: lukas-adventurelog
+name: AdventureLog
+tagline: Travel tracker and trip planner. 
+icon: ./icons/adventurelog.png
+category: Files & Productivity
+version: "0.6.0"
+port: 11441
+description: >-
+  AdventureLog is a Svelte Kit and Django application that utilizes a PostgreSQL database. Users can log the adventures they have experienced, as well as plan future ones. Key features include:
+
+    Logging past adventures with fields like name, date, location, description, and rating.
+    Planning future adventures with similar fields.
+    Tagging different activity types for better organization.
+    Viewing countries, regions, and marking visited regions.
+
+    AdventureLog aims to be your ultimate travel companion, helping you document your adventures and plan new ones effortlessly.
+developer: seanmorley15 
+website: https://adventurelog.app/
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/seanmorley15/AdventureLog
+support: https://github.com/seanmorley15/AdventureLog/issues
+gallery:
+  - https://github.com/seanmorley15/AdventureLog/blob/main/screenshots/adventures.png?raw=true
+  - https://github.com/seanmorley15/AdventureLog/blob/main/screenshots/details.png?raw=true
+  - https://github.com/seanmorley15/AdventureLog/blob/main/screenshots/edit.png?raw=true
+  - https://github.com/seanmorley15/AdventureLog/blob/main/screenshots/map.png?raw=true
+  - https://github.com/seanmorley15/AdventureLog/blob/main/screenshots/itinerary.png?raw=true
+  - https://github.com/seanmorley15/AdventureLog/blob/main/screenshots/countries.png?raw=true
+  - https://github.com/seanmorley15/AdventureLog/blob/main/screenshots/regions.png?raw=true
+releaseNotes: >-
+    What's New
+
+    New GitHub workflows for multi-arch image generation
+    New docker-compose file with Traefik support
+    New adventure creation and edit modal with multiple image support
+    Adds support for end dates to adventures
+    Make images open in a display larger on click
+    New transportation display card
+    Add new regions to world travel
+    Makes the world travel data auto seed on startup
+    Migrates to PostGIS database (update docker-compose with correct database image if already using the app)
+    Adventures can now auto mark supported regions if they are located in one. This process can also be manually triggered in settings.
+    Many bugs have been fixes - thanks!
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

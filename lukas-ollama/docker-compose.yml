@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  ollama:
+    volumes:
+      - ${APP_DATA_DIR}/ollama:/root/.ollama
+    ports:
+      - 11434:11434
+    container_name: ollama
+    image: ollama/ollama
+    restart: on-failure
+volumes:
+  ollama: {}
+networks: {}

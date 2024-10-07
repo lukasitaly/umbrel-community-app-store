@@ -1,0 +1,38 @@
+manifestVersion: 1
+id: lukas-hortusfox
+name: HortusFox
+tagline: Plant Parenting & Tracking
+icon: ./icons/hortusfox.png
+category: Files & Productivity
+version: "3.5"
+port: 11444
+description: >-
+  HortusFox is a free and open-sourced self-hosted plant manager system that you can use to manage, keep track and journal your home plants. It is designed in a collaborative way, so you can manage your home plants with your partner, friends, family & more! By shipping the software as a self-hosted product, you are always master of your own personal data and thus are in full control over them. HortusFox is open-sourced MIT licensed software, so you can contribute to the software or make your own version of it.
+
+  HortusFox provides you with important features such as managing your home locations and assiging added plants to them. You can set various details about your plants such as specific attributes, preview photo, tags, notes, gallery photos and many more! The system also provides you with the opportunity to manage your inventory that is needed to care for your beloved plants. The tasks feature helps you to keep track of what you have to do in order to care about your plants. Also there is a collaborative group chat for your users to exchange important hints about what someone has done or what needs to be done. Of course there are many more features! 
+developer: danielbrendel 
+website: https://www.hortusfox.com
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/danielbrendel/hortusfox-web
+support: https://github.com/danielbrendel/hortusfox-web/issues
+gallery:
+  - https://github.com/danielbrendel/hortusfox-web/blob/main/app/resources/gfx/screenshot-desktop.png?raw=true
+releaseNotes: >-
+    - Added proxy authentication
+    - Fixed deprecation warnings in input fields
+    - Added location specific log
+    - Fix listly migration in docker environment
+    - Styling for e-mails via themes
+    - Updated dependencies
+    - New logo and other graphical assets
+    - Custom host for image sharing
+    - Allow searching for custom attributes
+    - Custom actions for location specific updates
+    - Fix docker timezone error
+    - Many more API endpoints
+    - Various improvements and bugfixes
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

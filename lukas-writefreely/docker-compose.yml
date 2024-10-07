@@ -12,7 +12,7 @@ networks:
 services:
   writefreely-web:
     container_name: "writefreely-web"
-    image: "writeas/writefreely:latest"
+    image: "writeas/writefreely:v0.15.1"
 
     volumes:
       - "${APP_DATA_DIR}/keys:/go/keys"
@@ -28,7 +28,7 @@ services:
     depends_on:
       - "writefreely-db"
 
-    restart: unless-stopped
+    restart: on-failure
 
   writefreely-db:
     container_name: "writefreely-db"
@@ -42,6 +42,6 @@ services:
 
     environment:
       - MYSQL_DATABASE=writefreely
-      - MYSQL_ROOT_PASSWORD=xaf1h34A7685wawA78o7YLa
+      - MYSQL_ROOT_PASSWORD=$APP_PASSWORD
 
-    restart: unless-stopped
+    restart: on-failure

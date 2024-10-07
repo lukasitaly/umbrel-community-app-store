@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: lukas-jetlog
+name: JetLog
+tagline: Personal flight tracker and viewer
+icon: ./icons/jetlog.png
+category: Files & Productivity
+version: "1.0.2"
+port: 11437
+description: >-
+  A self-hostable personal flight tracker and viewer
+developer: pbogre
+website: https://github.com/pbogre/jetlog
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/pbogre/jetlog
+support: https://github.com/pbogre/jetlog
+gallery:
+  - https://github.com/pbogre/jetlog/blob/main/images/homepage.png?raw=true
+  - https://github.com/pbogre/jetlog/blob/main/images/all-flights.png?raw=true
+releaseNotes: >-
+    🎉 Switched airport database provider to a more extensive database
+    Single flight view now shows more details about each airport
+    Improved the look of frequency-based markers
+    Fixed a bug that caused the exported CSV to contain invalid values for the ticket_class column
+    Some minor UI changes
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

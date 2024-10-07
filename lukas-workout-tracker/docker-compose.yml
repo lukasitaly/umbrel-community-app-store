@@ -1,12 +1,12 @@
 services:
   workout-tracker:
-    image: ghcr.io/jovandeginste/workout-tracker:master
-    restart: unless-stopped
+    image: ghcr.io/jovandeginste/workout-tracker:v1.18.1
+    restart: on-failure
     ports:
       # Host Port:Container Port
       - 8070:8080
     volumes:
       - ${APP_DATA_DIR}/data:/data
     environment:
-      - WT_JWT_ENCRYPTION_KEY=xaf1h34A7685wawA78o7YLa
+      - WT_JWT_ENCRYPTION_KEY=${APP_SEED}
 

@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: lukas-dashdot
+name: Dash.
+tagline: A simple, modern server dashboard
+icon: ./icons/jetlog.png
+category: Files & Productivity
+version: "5.9.0"
+port: 11438
+description: >-
+  dash. (or dashdot) is a modern server dashboard, running on the latest tech, designed with glassmorphism in mind.. 
+developer: MauriceNino 
+website: https://getdashdot.com/
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/MauriceNino/dashdot
+support: https://github.com/MauriceNino/dashdot
+gallery:
+  - https://github.com/MauriceNino/dashdot/blob/main/apps/docs/static/img/screenshot_darkmode.png?raw=true
+  - https://github.com/MauriceNino/dashdot/blob/main/apps/docs/static/img/screenshot_lightmode.png?raw=true
+releaseNotes: >-
+    add debian logo (696233f)
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

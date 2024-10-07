@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: lukas-hammond
+name: Hammond
+tagline: Vehicle & expense management
+icon: ./icons/hammond.png
+category: Files & Productivity
+version: "0.0.24"
+port: 11440
+description: >-
+  Hammond is a self hosted vehicle management system to track fuel and other expenses related to all of your vehicles. It supports multiple users sharing multiple vehicles. It is the logical successor to Clarkson which has not been updated for quite some time now. This repo is again a fork of akhilrex's great project.
+developer: AlfHou 
+website: https://github.com/AlfHou/hammond
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/AlfHou/hammond
+support: https://github.com/AlfHou/hammond/issues
+gallery:
+  - https://github.com/AlfHou/hammond/blob/master/images/screenshot.jpg?raw=true
+  - https://github.com/AlfHou/hammond/blob/master/images/vehicles_add.jpg?raw=true
+  - https://github.com/AlfHou/hammond/blob/master/images/vehicle_detail.jpg?raw=true
+  - https://github.com/AlfHou/hammond/blob/master/images/create_fillup.jpg?raw=true
+  - https://github.com/AlfHou/hammond/blob/master/images/create_expense.jpg?raw=true
+  - https://github.com/AlfHou/hammond/blob/master/images/users.jpg?raw=true
+  - https://github.com/AlfHou/hammond/blob/master/images/settings.jpg?raw=true
+releaseNotes: >-
+    Add Slovenian translation by @thehijacker in #93
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

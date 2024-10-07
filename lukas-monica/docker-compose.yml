@@ -11,7 +11,7 @@ services:
       - DB_HOST=db
       - DB_DATABASE=monica
       - DB_USERNAME=monica
-      - DB_PASSWORD=LDdQSapSK3gpFUFQ%XcThEg9GU8*HHjouJ3p
+      - DB_PASSWORD=$APP_PASSWORD
       - LOG_CHANNEL=stderr
       - CACHE_DRIVER=database
       - SESSION_DRIVER=database
@@ -110,7 +110,7 @@ services:
       - RATE_LIMIT_PER_MINUTE_OAUTH=5
     volumes:
       - ./data:/var/www/html/storage
-    restart: always
+    restart: on-failure
 
   db:
     image: mariadb:11
@@ -118,10 +118,10 @@ services:
       - MYSQL_RANDOM_ROOT_PASSWORD=true
       - MYSQL_DATABASE=monica
       - MYSQL_USER=monica
-      - MYSQL_PASSWORD=LDdQSapSK3gpFUFQ%XcThEg9GU8*HHjouJ3p
+      - MYSQL_PASSWORD=$APP_PASSWORD
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
-    restart: always
+    restart: on-failure
 
 volumes:
   data:

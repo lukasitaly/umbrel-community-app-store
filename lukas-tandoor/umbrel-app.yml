@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: lukas-tandoor
+name: Tandoor
+tagline: Recipe manager
+icon: ./icons/jetlog.png
+category: Files & Productivity
+version: "1.5.19"
+port: 11443
+description: >-
+  The recipe manager that allows you to manage your ever growing collection of digital recipes.
+developer: Tandoor 
+website: https://tandoor.dev/
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/TandoorRecipes/recipes
+support: https://github.com/TandoorRecipes/recipes/issues
+gallery:
+  - https://github.com/TandoorRecipes/recipes/blob/develop/docs/preview.png?raw=true
+releaseNotes: >-
+    - improved recipe scraping functions (thanks to @smilerz #3227)
+    - improved logging and log settings (thanks to @mikhail5555 #3215)
+    - improved added us_cup as base unit (thanks to yuekaim #3260)
+    - fixed guest user errors on search (due to missing permission for keyword/food/space), now read only permission
+    - fixed /openapi/ endpoint not working due to missing package #3209
+    - fixed issue with importing urls #3249
+    - fixed README link to contribution guidelines (thanks to jknndy #3226)
+    - updated translations (thanks to all the awesome people helping with them on translate.tandoor.dev)
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

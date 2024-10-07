@@ -1,0 +1,76 @@
+services:
+  db_recipes:
+    restart: on-failure
+    image: postgres:16-alpine
+    volumes:
+      - ${APP_DATA_DIR}/postgresql:/var/lib/postgresql/data
+    environment:
+      # random secret key, use for example `base64 /dev/urandom | head -c50` to generate one
+      - SECRET_KEY=$APP_SEED
+
+      # allowed hosts (see documentation), should be set to your hostname(s) but might be * (default) for some proxies/providers
+      # ALLOWED_HOSTS=recipes.mydomain.com
+
+      # add only a database password if you want to run with the default postgres, otherwise change settings accordingly
+      - DB_ENGINE=django.db.backends.postgresql
+      - POSTGRES_HOST=db_recipes
+      - POSTGRES_DB=djangodb
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=djangouser
+      - POSTGRES_PASSWORD==$APP_PASSWORD
+
+  web_recipes:
+    restart: on-failure
+    image: vabene1111/recipes
+    environment:
+      # random secret key, use for example `base64 /dev/urandom | head -c50` to generate one
+      - SECRET_KEY=$APP_SEED
+
+      # allowed hosts (see documentation), should be set to your hostname(s) but might be * (default) for some proxies/providers
+      # ALLOWED_HOSTS=recipes.mydomain.com
+
+      # add only a database password if you want to run with the default postgres, otherwise change settings accordingly
+      - DB_ENGINE=django.db.backends.postgresql
+      - POSTGRES_HOST=db_recipes
+      - POSTGRES_DB=djangodb
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=djangouser
+      - POSTGRES_PASSWORD==$APP_PASSWORD
+    volumes:
+      - staticfiles:/opt/recipes/staticfiles
+      # Do not make this a bind mount, see https://docs.tandoor.dev/install/docker/#volumes-vs-bind-mounts
+      - nginx_config:/opt/recipes/nginx/conf.d
+      - ${APP_DATA_DIR}/mediafiles:/opt/recipes/mediafiles
+    depends_on:
+      - db_recipes
+
+  nginx_recipes:
+    image: nginx:mainline-alpine
+    restart: on-failure
+    ports:
+      - 11443:80
+    environment:
+      # random secret key, use for example `base64 /dev/urandom | head -c50` to generate one
+      - SECRET_KEY=$APP_SEED
+
+      # allowed hosts (see documentation), should be set to your hostname(s) but might be * (default) for some proxies/providers
+      # ALLOWED_HOSTS=recipes.mydomain.com
+
+      # add only a database password if you want to run with the default postgres, otherwise change settings accordingly
+      - DB_ENGINE=django.db.backends.postgresql
+      - POSTGRES_HOST=db_recipes
+      - POSTGRES_DB=djangodb
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=djangouser
+      - POSTGRES_PASSWORD==$APP_PASSWORD
+    depends_on:
+      - web_recipes
+    volumes:
+      # Do not make this a bind mount, see https://docs.tandoor.dev/install/docker/#volumes-vs-bind-mounts
+      - nginx_config:/etc/nginx/conf.d:ro
+      - staticfiles:/static:ro
+      - ${APP_DATA_DIR}/mediafiles:/media:ro
+
+volumes:
+  nginx_config:
+  staticfiles:

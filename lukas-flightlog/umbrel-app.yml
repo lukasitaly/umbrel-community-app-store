@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: lukas-flightlog
+name: Flightlog
+tagline: Keep track of your personal flight history
+icon: ./icons/flightlog.png
+category: Files & Productivity
+version: "2.1.1"
+port: 11435
+description: >-
+  Flight log web application that keeps track of your personal flight history 
+developer: perdian
+website: https://github.com/perdian/flightlog
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/perdian/flightlog
+support: https://github.com/perdian/flightlog/issues
+gallery:
+  - https://github.com/perdian/flightlog/blob/main/docs/screenshots/home.png?raw=true
+releaseNotes: >-
+    Release automatically created by GitHub Actions
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

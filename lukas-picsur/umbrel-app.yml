@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: lukas-picsur
+name: Picsur
+tagline: Totally not an Imgur clone
+icon: ./icons/picsur.jpeg
+category: Files & Productivity
+version: "v0.5.3"
+port: 11436
+description: >-
+  An easy to use, selfhostable image sharing service like Imgur with built in converting 
+developer: Haven
+website: https://picsur.org/
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/caramelfur/picsur
+support: https://github.com/caramelfur/picsur/issues
+gallery:
+releaseNotes: >-
+    This is a small release with some fixes and mainly up to date dependencies.
+
+    - CORS is now once again set up properly, so no need for proxy overrides anymore
+    - Images now send a cache header, ensuring images get cached for a month once retrieved
+    - Added app manifest to Picsur, you will now be able to install it as a webapp
+    - Fixed issue where people locked themselves out by misconfiguring permissions
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

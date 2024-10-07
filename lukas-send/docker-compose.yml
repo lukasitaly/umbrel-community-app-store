@@ -4,7 +4,7 @@ services:
   nginx-proxy:
     container_name: nginx-proxy
     image: 'jwilder/nginx-proxy:alpine'
-    restart: always
+    restart: on-failure
     ports:
       - '80:80'
       - '443:443'
@@ -19,7 +19,7 @@ services:
   
   proxy-letsencrypt:
     image: 'jrcs/letsencrypt-nginx-proxy-companion'
-    restart: always
+    restart: on-failure
     environment:
       - DEFAULT_EMAIL=${LETSENCRYPT_EMAIL}
       - NGINX_PROXY_CONTAINER=nginx-proxy
@@ -32,7 +32,7 @@ services:
   
   send:
     image: 'registry.gitlab.com/timvisee/send:latest'
-    restart: always
+    restart: on-failure
     ports:
       - '1234:1234'
     volumes:
@@ -60,7 +60,7 @@ services:
 
   redis:
     image: 'redis:alpine'
-    restart: always
+    restart: on-failure
     volumes:
       - send-redis:/data
 

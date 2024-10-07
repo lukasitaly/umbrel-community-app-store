@@ -18,6 +18,7 @@ services:
       - HAVEN_DB_PASSWORD=$APP_PASSWORD
       - HAVEN_USER_EMAIL=email@havenweb.org
       - HAVEN_USER_PASS=$APP_PASSWORD
+    restart: on-failure
 
   postgresql:
     image: postgres:13.2-alpine
@@ -39,6 +40,7 @@ services:
       POSTGRES_USER: haven
     volumes:
       - ${APP_DATA_DIR}/postgresqldata:/var/lib/postgresql/data
+    restart: on-failure
 
 volumes:
   postgresqldata:

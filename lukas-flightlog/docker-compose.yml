@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  flightlog:
+    ports:
+      - 11435:8080
+    image: perdian/flightlog:v2.1.1
+    restart: on-failure
+networks: {}

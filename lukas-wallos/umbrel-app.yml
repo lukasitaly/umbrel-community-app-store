@@ -4,14 +4,14 @@ name: Wallos
 tagline: Wallos - Open-Source Personal Subscription Tracker 
 icon: ./icons/wallos.png
 category: Finance
-version: "2.26.0"
+version: "2.27.3"
 port: 8282
 description: >-
   Wallos is a powerful, open-source, and self-hostable web application designed to empower you in managing your finances with ease. Say goodbye to complicated spreadsheets and expensive financial software – Wallos simplifies the process of tracking expenses and helps you gain better control over your financial life.
 developer: ellite
 website: https://github.com/ellite/Wallos
 submitter: lukasitaly
-submission: https://github.com/ellite/Wallos
+submission: https://github.com/lukasitaly/umbrel-community-app-store
 repo: https://github.com/ellite/Wallos
 support: https://github.com/ellite/Wallos/issues
 gallery:

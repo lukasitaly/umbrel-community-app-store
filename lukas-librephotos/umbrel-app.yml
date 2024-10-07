@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: lukas-librephotos
+name: LibrePhotos
+tagline: Open source photo management
+icon: ./icons/librephotos.png
+category: Files & Productivity
+version: "5.9.0"
+port: 11439
+description: >-
+  A self-hosted open source photo management service. This is the repository of the backend. 
+developer: derneuere 
+website: https://docs.librephotos.com/
+submitter: lukasitaly
+submission: https://github.com/lukasitaly/umbrel-community-app-store
+repo: https://github.com/LibrePhotos/librephotos
+support: https://github.com/LibrePhotos/librephotos/issues
+gallery:
+  - https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/mockups_main_fhd.png?raw=true
+  - https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/more_to_discover.png?raw=true
+  - https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/photo_info_fhd.png?raw=true
+  - https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/photo_manage.png?raw=true
+releaseNotes: >-
+    add debian logo (696233f)
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

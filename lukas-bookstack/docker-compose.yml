@@ -1,23 +1,22 @@
----
 services:
   bookstack:
-    image: lscr.io/linuxserver/bookstack
+    image: lscr.io/linuxserver/bookstack:v24.05.4
     container_name: bookstack
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Rome
-      #- APP_URL=
+      - APP_URL=$DEVICE_DOMAIN_NAME
       - DB_HOST=bookstack_db
       - DB_PORT=3306
       - DB_USER=bookstack
-      - DB_PASS=LDdQSapSK3gpFUFQ%XcThEg9GU8*HHjouJ3p
+      - DB_PASS=$APP_PASSWORD
       - DB_DATABASE=bookstackapp
     volumes:
       - ${APP_DATA_DIR}/app_data:/config
     ports:
       - 6875:80
-    restart: unless-stopped
+    restart: on-failure
     depends_on:
       - bookstack_db
 
@@ -28,10 +27,10 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Rome
-      - MYSQL_ROOT_PASSWORD=LDdQSapSK3gpFUFQ%XcThEg9GU8*HHjouJ3p
+      - MYSQL_ROOT_PASSWORD=$APP_PASSWORD
       - MYSQL_DATABASE=bookstackapp
       - MYSQL_USER=bookstack
-      - MYSQL_PASSWORD=LDdQSapSK3gpFUFQ%XcThEg9GU8*HHjouJ3p
+      - MYSQL_PASSWORD=$APP_PASSWORD
     volumes:
       - ${APP_DATA_DIR}/db_data:/config
-    restart: unless-stopped
+    restart: on-failure

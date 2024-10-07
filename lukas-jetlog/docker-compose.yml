@@ -1,0 +1,8 @@
+services:
+  jetlog:
+    image: pbogre/jetlog:v1.0.2
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    restart: on-failure
+    ports:
+      - 11437:3000
