@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-hammond
 name: Hammond
 tagline: Vehicle & expense management
-icon: ./icons/hammond.png
+icon: https://github.com/AlfHou/hammond/blob/master/ui/public/touch-icon.png?raw=true # OR https://github.com/AlfHou/hammond/blob/master/ui/public/hammond.png?raw=true
 category: Files & Productivity
 version: "0.0.24"
 port: 11440

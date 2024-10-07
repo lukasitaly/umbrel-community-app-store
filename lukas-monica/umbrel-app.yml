@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-monica
 name: Monica
 tagline: Monica helps you organize the social interactions with your loved ones.
-icon: ./icons/monica.png
+icon: https://www.faviconextractor.com/favicon/monicahq.com?larger=true
 category: Social
 version: "4.1.2"
 port: 8523

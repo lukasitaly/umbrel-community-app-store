@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-flightlog
 name: Flightlog
 tagline: Keep track of your personal flight history
-icon: ./icons/flightlog.png
+icon: https://github.com/perdian/flightlog/blob/main/src/main/resources/assets/flightlog/icons/plane.png?raw=true
 category: Files & Productivity
 version: "2.1.1"
 port: 11435

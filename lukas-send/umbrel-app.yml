@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-send
 name: Send
 tagline: Simple, private file sharing
-icon: ./icons/send.png
+icon: https://www.faviconextractor.com/favicon/send.vis.ee
 category: Files & Productivity
 version: "1"
 port: 8282

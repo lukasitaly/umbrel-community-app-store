@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-hortusfox
 name: HortusFox
 tagline: Plant Parenting & Tracking
-icon: ./icons/hortusfox.png
+icon: https://www.faviconextractor.com/favicon/hortusfox.com?larger=true
 category: Files & Productivity
 version: "3.5"
 port: 11444

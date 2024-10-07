@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-ollama
 name: Ollama
 tagline: Get up and running with large language models.
-icon: ./icons/ollama.png
+icon: https://ollama.com/public/apple-touch-icon.png
 category: AI
 version: "0.3.12"
 port: 11434

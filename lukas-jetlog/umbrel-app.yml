@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-jetlog
 name: JetLog
 tagline: Personal flight tracker and viewer
-icon: ./icons/jetlog.png
+icon: https://github.com/pbogre/jetlog/blob/main/client/public/favicon.png?raw=true
 category: Files & Productivity
 version: "1.0.2"
 port: 11437

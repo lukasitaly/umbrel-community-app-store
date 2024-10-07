@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-tube-archivist
 name: TubeArchivist
 tagline: Your self hosted YouTube media server 
-icon: ./icons/tubearchivist.png
+icon: https://www.faviconextractor.com/favicon/tubearchivist.com?larger=true
 category: Media
 version: "0.4.10"
 port: 8523

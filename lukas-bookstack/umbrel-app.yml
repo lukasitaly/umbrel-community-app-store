@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-bookstack
 name: BookStack
 tagline: A platform to create documentation/wiki
-icon: ./icons/bookstack.png
+icon: https://www.faviconextractor.com/favicon/bookstackapp.com?larger=true
 category: Files & Productivity
 version: "24.05.4"
 port: 8523

@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-adventurelog
 name: AdventureLog
 tagline: Travel tracker and trip planner. 
-icon: ./icons/adventurelog.png
+icon: https://www.faviconextractor.com/favicon/adventurelog.app?larger=true
 category: Files & Productivity
 version: "0.6.0"
 port: 11441

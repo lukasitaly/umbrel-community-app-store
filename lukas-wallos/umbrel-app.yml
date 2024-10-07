@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-wallos
 name: Wallos
 tagline: Wallos - Open-Source Personal Subscription Tracker 
-icon: ./icons/wallos.png
+icon: https://github.com/ellite/Wallos/blob/main/images/icon/android-chrome-512x512.png?raw=true
 category: Finance
 version: "2.27.3"
 port: 8282

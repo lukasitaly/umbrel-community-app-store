@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-writefreely
 name: WriteFreely
 tagline: Markdown-based publishing platform
-icon: ./icons/writefreely.png
+icon: https://avatars.githubusercontent.com/u/45876560?s=200&v=4
 category: Files & Productivity
 version: "0.15.1"
 port: 8523

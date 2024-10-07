@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-homebox
 name: TubeArchivist
 tagline: Home inventory and organization system
-icon: ./icons/homebox.png
+icon: https://homebox.software/lilbox.svg
 category: Home & Automation
 version: "0.15.2"
 port: 8523

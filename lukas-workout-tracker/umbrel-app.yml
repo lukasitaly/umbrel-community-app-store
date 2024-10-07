@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-workout-tracker
 name: Workout Tracker
 tagline: A workout tracking web application
-icon: 
+icon: https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F013%2F805%2F454%2Foriginal%2Fgrey-dumbell-illustration-on-white-background-free-vector.jpg&sp=1728322654T61de4469b0834e5c297d7142687323e1d73cd80b7521bd3b3bc7ec358cfebfc9
 category: Files & Productivity
 version: "1.18.1"
 port: 8070

@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-dashdot
 name: Dash.
 tagline: A simple, modern server dashboard
-icon: ./icons/jetlog.png
+icon: https://www.faviconextractor.com/favicon/getdashdot.com?larger=true
 category: Files & Productivity
 version: "5.9.0"
 port: 11438

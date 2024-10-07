@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-tandoor
 name: Tandoor
 tagline: Recipe manager
-icon: ./icons/jetlog.png
+icon: https://www.faviconextractor.com/favicon/docs.tandoor.dev?larger=true
 category: Files & Productivity
 version: "1.5.19"
 port: 11443

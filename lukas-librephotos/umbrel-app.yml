@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-librephotos
 name: LibrePhotos
 tagline: Open source photo management
-icon: ./icons/librephotos.png
+icon: https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/lp-square-black.png?raw=true
 category: Files & Productivity
 version: "5.9.0"
 port: 11439

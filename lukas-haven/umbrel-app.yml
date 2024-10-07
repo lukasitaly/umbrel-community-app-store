@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-haven
 name: Haven
 tagline: Self-hostable private blogging
-icon: ./icons/havenblog.png
+icon: https://www.faviconextractor.com/favicon/havenweb.org?larger=true
 category: Files & Productivity
 version: "1"
 port: 8523

@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lukas-picsur
 name: Picsur
 tagline: Totally not an Imgur clone
-icon: ./icons/picsur.jpeg
+icon: https://www.faviconextractor.com/favicon/picsur.org?larger=true
 category: Files & Productivity
 version: "v0.5.3"
 port: 11436
