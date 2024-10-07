@@ -11,8 +11,10 @@ This repository is a template to create an Umbrel Community App Store. These add
 3. Change the name of the `sparkles-hello-world` folder to match your app's ID. The app ID is for you to decide. For example, if your app store ID is `whistles`, and your app is named My Video Downloader, you could set its app ID to `whistles-my-video-downloader`, and rename the folder accordingly.
 4. Next, enter your app's listing details in the `whistles-my-video-downloader/umbrel-app.yml`. These are displayed in the umbrelOS UI.
 5. Include the necessary Docker services in `whistles-my-video-downloader/docker-compose.yml`.
-6. That's it! Your Community App Store, featuring your unique app, is now set up and ready to go. To use your Community App Store, you can add its GitHub url the umbrelOS user interface as shown in the following demo:
+6. OPTIONAL: exports.sh - A shell script to export environment variables used within `docker-compose.yml` and share with other installed apps
+7. That's it! Your Community App Store, featuring your unique app, is now set up and ready to go. To use your Community App Store, you can add its GitHub url the umbrelOS user interface as shown in the following demo:
 
+The exports.sh shell script is a simple script to export environmental variables that your docker-compose.yml can read. These environment variables are also accessible when other apps start through their docker-compose.yml files. Most applications will not require this feature.
 
 https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
 ## Volumes
@@ -42,6 +44,7 @@ https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-
 | `$APP_HIDDEN_SERVICE` | The address of the Tor hidden service your app will be exposed at |
 | `$APP_PASSWORD` | Unique plain text password that can be used for authentication in your app, shown to the user in the Umbrel UI |
 | `$APP_SEED` | Unique 256 bit long hex string (128 bits of entropy) deterministically derived from user's Umbrel seed and your app's ID |
+
 
 ## App manifest YAML
 
