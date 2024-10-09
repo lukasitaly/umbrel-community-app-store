@@ -4,7 +4,7 @@ services:
     restart: on-failure
     ports:
       # Host Port:Container Port
-      - 8070:8080
+      - 11448:8080
     volumes:
       - ${APP_DATA_DIR}/data:/data
     environment:
