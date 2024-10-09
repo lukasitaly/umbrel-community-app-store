@@ -5,7 +5,7 @@ tagline: Monica helps you organize the social interactions with your loved ones.
 icon: https://www.faviconextractor.com/favicon/monicahq.com?larger=true
 category: Social
 version: "4.1.2"
-port: 8523
+port: 10020
 description: >-
   Personal CRM. Remember everything about your friends, family and business relationships. 
 developer: djaiss
