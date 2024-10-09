@@ -3,7 +3,7 @@ services:
     container_name: wallos
     image: bellamy/wallos:v2.27.3
     ports:
-      - "8282:80/tcp"
+      - "11447:80/tcp"
     environment:
       TZ: 'Europe/Rome'
     # Volumes store your data between container upgrades
