@@ -26,19 +26,19 @@ https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-
 | `${APP_BITCOIN_DATA_DIR}` |  The directory where Bitcoin Core's data is stored. This is crucial for applications that require access to the Bitcoin blockchain data managed by Bitcoin Core. |
 
 ## Variables
-### System level environment variables
+### System Level Environment Variables
 | Variables | Description |
 | --- | --- |
 | `$DEVICE_HOSTNAME` | The hostname of the Umbrel server device, typically a simple name like "umbrel". This is used for network identification and communication. |
 | `$DEVICE_DOMAIN_NAME` | A local domain name for the Umbrel server, often in the format of a .local address (e.g., "umbrel.local"). This allows for easier access to the server within a local network. |
 
-### Tor proxy environment variables
+### Tor Proxy Environment Variables
 | Variables | Description |
 | --- | --- |
 | `$TOR_PROXY_IP` | The local IP address of the Tor proxy. This is used by applications to route traffic through the Tor network for enhanced privacy and security. |
 | `$TOR_PROXY_PORT` | The port number on which the Tor proxy is listening. This is necessary for applications to connect to the Tor network correctly. |
 
-### App specific environment variables
+### App Specific Environment Variables
 | Variables | Description |
 | --- | --- |
 | `$APP_HIDDEN_SERVICE` | The address of the Tor hidden service where your application will be accessible |
@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-
 | `$APP_SEED` | A unique 256-bit hexadecimal string (128 bits of entropy) that is deterministically derived from the user's Umbrel seed and the app's ID. This seed can be used for cryptographic purposes or to generate unique identifiers within the app. |
 
 
-## App manifest YAML
+## App Manifest YAML
 
 | Variables | Description |
 | --- | --- |
