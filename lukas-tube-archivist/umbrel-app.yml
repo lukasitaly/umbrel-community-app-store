@@ -5,7 +5,7 @@ tagline: Your self hosted YouTube media server
 icon: https://www.faviconextractor.com/favicon/tubearchivist.com?larger=true
 category: Media
 version: "0.4.10"
-port: 8523
+port: 11445
 description: >-
   Wallos is a powerful, open-source, and self-hostable web application designed to empower you in managing your finances with ease. Say goodbye to complicated spreadsheets and expensive financial software – Wallos simplifies the process of tracking expenses and helps you gain better control over your financial life.
 developer: ellite
