@@ -4,7 +4,7 @@ services:
     restart: on-failure
     image: bbilly1/tubearchivist:v0.4.10
     ports:
-      - 11444:8000
+      - 11445:8000
     volumes:
       - ${APP_DATA_DIR}/media:/youtube
       - ${APP_DATA_DIR}/cache:/cache
