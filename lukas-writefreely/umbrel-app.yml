@@ -5,7 +5,7 @@ tagline: Markdown-based publishing platform
 icon: https://avatars.githubusercontent.com/u/45876560?s=200&v=4
 category: Files & Productivity
 version: "0.15.1"
-port: 8523
+port: 11446
 description: >-
   A clean, Markdown-based publishing platform made for writers. Write together and build a community. 
 developer: thebaer
